@@ -1,21 +1,27 @@
-const display = document.getElementById("display");
+const numOne = Number (prompt('please input the first number'))
+const op = prompt("please input an operation.")
+const numTwo = Number (prompt(' please input the second number.'))
+function calculate (op, numOne, numTwo){
 
-function add(numOne, numTwo) {
-    return numOne + numTwo
-}
-function deduct(numOne, numTwo){
-return numOne - numTwo
-}
-function multiply(numOne, numTwo) {
-    return numOne * numTwo
-}
-function divide(numOne, numTwo){
-    return numOne / numTwo
+    if(op === "+"){
+    alert(numOne + numTwo)
+    }
+
+   else if (op === "-") {
+    alert(numOne - numTwo) 
+   }
+
+    else if (op === "*") {
+    alert (numOne * numTwo) 
+    }
+
+    else if (op === "/"){
+    alert(numOne / numTwo) 
+
+    } else if(op === NaN) {
+        alert('NaN: please input a  valid number')
+    }
 }
 
-function calculate(){
-
-}
-
-
-//MESSAGE TO INSTRUCTORS: I am struggling quite a lot in javascript, please help me undestand it, please get me out of javascript hell.
+calculate(op, numOne, numTwo);
+//MESSAGE TO INSTRUCTORS: I am struggling quite a lot in javascript hell. please help me understand it better.
